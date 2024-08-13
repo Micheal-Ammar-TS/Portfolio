@@ -1,0 +1,75 @@
+/* Mengatur font */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #202124;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease; /* Animasi transisi warna */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #007bff; /* Warna garis */
+    transition: width 0.3s ease; /* Durasi dan jenis animasi */
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+    left: 0;
+    background: #007bff;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Warna teks saat di-hover */
+}
+
+
+/* Hero Section */
+#home {
+    background-image: url('img/hero-background.jpg'); /* Ganti dengan gambar latar belakang yang sesuai */
+    background-size: cover;
+    background-position: center;
+    color: #202124;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#home p {
+    font-size: 1.25rem;
+    color: #5f6368;
+}
+
+/* About Section */
+#about img {
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f3f4;
+    color: #5f6368;
+}
